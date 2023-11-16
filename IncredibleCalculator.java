@@ -62,6 +62,20 @@ public class IncredibleCalculator{
                     System.out.println("El resultado de la multiplicación es: "+resultado);
                     break;
             case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
+                    System.out.println("Diga el primer número");
+                    aux=sc.newLine();
+                    num1=Integer.parseInt(aux);
+
+                    System.out.println("Diga el segundo número");
+                    aux=sc.newLine();
+                    num2=Integer.parseInt(aux);
+                    if (num2!=0){
+                        resultado=num1/num2;
+                        System.out.printf("\nEl resultado de la division es: %.0f",resultado);
+                    } else {
+                        System.out.println("El valor del segundo número no es válido");
+                    }
+                    
                     break;
             case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
                     break;
